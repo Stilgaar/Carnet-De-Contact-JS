@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+    background-color: grey;
+    margin: auto;
+}
+
+header {
+    margin-top: 15px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 1.5%;
+    width: 55%;
+    background-color: darkgrey;
+    display: flex;
+    margin: auto;    
+}
+
+h1, .box1, .box2, .box3, .box4{
+    display: flex;
+    margin: auto;       
+    background-color: darkgrey;
+    border: 3px solid rgb(77, 77, 77);
+    border-radius: 15px;
+}
+
+.box2, .box3, .box4 {
+    padding: 15px;
+}
+
+.box4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+}
+
+.box1{
+    background-color: darkgrey;
+    width: 50%;
+    height: 50%;
+    margin-top: 3%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newboxes, .form-select {
+    margin: 10px;
+}
+
+.box2 {
+    position: absolute;
+    left: 3%;
+    top: 10%;
+}
+
+.box3 {
+    position: absolute;
+    right: 3%;
+    top: 10%;
+}
+
+.emplacement{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+button {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+footer {
+    height: 2.5em;
+    padding-left: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    font-weight: lighter;
+    background-color: rgb(236, 236, 236);
+}
+
+p {
+    display: wrap;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+
+.newline {
+    text-align: left;
+    padding: auto;
+    margin: auto;
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+    border:solid 3px black;
+}
+
+.recherche {
+    margin-top: 10px;
+}

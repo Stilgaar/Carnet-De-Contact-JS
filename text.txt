@@ -1,0 +1,32 @@
+class General {
+    
+    constructor(nom, prenom, mail, tel)
+    this.nom = nom;
+    this.prenom = prenom;
+    this.mail = mail;
+    this.tel = tel;
+
+}
+
+class Pro extends General {
+    
+    constructor(nom, prenom, mail, tel, siret)
+    super(nom, prenom, mail, tel);
+    this.siret = siret;
+
+    proffessionel(){
+        console.log(`Je m'appelle ${nom} et je suis proffessionel`)
+    }
+
+}
+
+class Perso extends General {
+    
+    constructor(nom, prenom, mail, tel, adresse)
+    super(nom, prenom, mail, tel);
+    this.adresse = adresse;
+    
+    personnel(){
+    console.log(`Je m'appelle ${nom} et je suis personnel (oui oui)`)
+    }
+}

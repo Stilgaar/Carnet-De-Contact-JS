@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet de Contact</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./styles.css"> 
+
+</head>
+
+<body>
+ <!-- Titre -->
+    <header>
+        <h1 class="d-flex flex-column bd-highlight mb-3">Bienvenue sur votre carnet d'Adresses & de Contacts</h1>
+    </header>
+
+<!-- Espace prise d'information-->
+
+    <main class="box1 d-flex flex-column bd-highlight mb-3">
+        <form id="formulaire">
+            <div> <input class="emplacement border border-5 " name="nom" id="nom" type="text" placeholder="Nom"> </div>
+            <div> <input class="emplacement border border-5 " name="prenom" id="prenom" type="text" placeholder="Prenom"> </div>
+            <div> <input class="emplacement border border-5 " name="mail" id="mail" type="text" placeholder="Mail"></div>
+            <div> <input class="emplacement border border-5 " name="tel" id="tel" type="text" placeholder="Ton06"> </div>
+
+            <div class="newboxes">
+                <div id="newpersonnel"></div>
+                <div id="newprofessionel"></div>
+            </div>
+
+<!-- Prises d'informations -->
+
+            <select id="select" class="form-select form-select-sm border border-5" aria-label=".form-select-sm example">
+                <option selected>Choissisez une catégorie de concact.</option>
+                <option value="perso" id="perso" class="perso">Personnel</option>
+                <option value="professionel" id="professionel" class="professionel">Professionel</option>
+            </select>
+
+<!-- boutons -->
+
+            <div><button type="submit">Rajoutez votre contact au carnet d'adresse</button></div>
+        </form>
+
+        <div><button id="saveEntries">Recuper les anciens sauvgarder</button></div>
+        <div><button id="eraseAll"> Vider le Local Storage</button></div>
+
+        <input class="recherche border border-5" placeholder="Recherche par mail" type="email" id="search" />
+        <button id="searchButton">Rechercher</button>
+
+<!-- Espaces d'écriture du Js -->       
+
+        <section class="box2">
+            <div class="newentry" id="newEntry"><h3>Nouvelle Entrée</h3> </div>
+        </section>
+
+        <section class="box3">
+            <div class="savedentry" id="savedEntry"> <h3>Sauvegarde</h3></div>
+        </section>
+    </main>
+
+    <section class="box4">
+        <div class="searchresults" id="searchResult"> <h3>Résultat de la recherche</h3></div>
+    </section>
+
+    <footer class="d-flex align-items-center"> &copy Jeff van Straelen pendant mes cours au Bocal Academy &#8482 &reg
+    </footer>
+    <script src="./scriptcopy2.js"></script>
+</body>
+
+</html>
